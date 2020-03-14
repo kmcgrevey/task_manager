@@ -1,0 +1,12 @@
+<h1>All Tasks</h1>
+
+<%= button_to "home", '/', method: :get %>
+
+<% @tasks.each do |task| %>
+    <section id = "task-<%= task.id %>">
+    <h3><%= link_to "#{task.title}", task_path(task) %></h3>
+    <p><%= task.description %></p>
+    </section>
+    
+    <% end %>
+

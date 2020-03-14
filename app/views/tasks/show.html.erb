@@ -1,0 +1,7 @@
+<%= button_to "Task Index", "/tasks" %>
+
+<h1><%= @task.title %></h1>
+<p><%= @task.description %></p>
+<%= button_to "Edit", "/tasks/#{@task.id}/edit", method: :get %>
+<%= button_to "Delete", "/tasks/#{@task.id}", method: :delete %>
+

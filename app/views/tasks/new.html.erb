@@ -1,0 +1,11 @@
+<%= form_tag(tasks_path, method: :post) do %>
+    <h2>Enter A New Task</h2>
+    
+    <%= label_tag :title %>
+    <%= text_field_tag :title %></br>
+    
+    <%= label_tag :description %>
+    <%= text_area_tag :description %></br>
+
+    <%= submit_tag "submit" %>
+<% end %>

@@ -1,0 +1,11 @@
+<%= form_tag(task_path(@task), method: :patch) do %>
+    <h2>Edit Task</h2>
+    
+    <%= label_tag :title %>
+    <%= text_field_tag :title, "#{@task.title}" %></br>
+    
+    <%= label_tag :description %>
+    <%= text_area_tag :description, "#{@task.description}" %></br>
+
+    <%= submit_tag "submit" %>
+<% end %>
